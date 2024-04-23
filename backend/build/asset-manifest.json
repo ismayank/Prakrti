@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.43fa5598.css",
+    "main.js": "/static/js/main.be51ee04.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/bicycle-doodle-set-2D9Y49D.png": "/static/media/bicycle-doodle-set-2D9Y49D.116c47f82fb962d3ecf1.png",
+    "static/media/productbox.png": "/static/media/productbox.b7f26019a3ab57e493bf.png",
+    "static/media/shopping-bag-2.png": "/static/media/shopping-bag-2.588a7939be68f9f68d9e.png",
+    "static/media/images-bg.jpg": "/static/media/images-bg.ed60d20a44dc01298eaa.jpg",
+    "static/media/sealed-bag-2.png": "/static/media/sealed-bag-2.f1def5d27b8eb021b70b.png",
+    "static/media/3A910693-A382-4E05-9514-4FC2DFA0ECC5_1_105_c.jpg": "/static/media/3A910693-A382-4E05-9514-4FC2DFA0ECC5_1_105_c.1aef17d4b82385d6ea84.jpg",
+    "static/media/mte.png": "/static/media/mte.2cb7246d4996cca33d47.png",
+    "static/media/images-volunteer_hero.svg": "/static/media/images-volunteer_hero.2c410183cdd0e0940b0058cac089ba2b.svg",
+    "static/media/road.svg": "/static/media/road.047648dcb5e0cb04508e3ed3e4364086.svg",
+    "static/media/images-OBJECTS.svg": "/static/media/images-OBJECTS.0892a3f48ff7a6e399a08743b6b76687.svg",
+    "static/media/images-small-globe.svg": "/static/media/images-small-globe.14775e51f566ba8f25eeb95f550c5fe4.svg",
+    "index.html": "/index.html",
+    "main.43fa5598.css.map": "/static/css/main.43fa5598.css.map",
+    "main.be51ee04.js.map": "/static/js/main.be51ee04.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43fa5598.css",
+    "static/js/main.be51ee04.js"
+  ]
+}

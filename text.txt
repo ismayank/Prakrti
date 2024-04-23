@@ -1,0 +1,16 @@
+source venv/bin/activate
+python3 manage.py runserver
+python3 manage.py flush
+
+start postgresql on port 5431
+
+npm run build
+
+psql -U mayanksingh -d auth_system 
+\dt
+SELECT * FROM public.accounts_useraccount;
+
+
+help
+Prakrti?
+how to login

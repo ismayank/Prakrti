@@ -1,0 +1,140 @@
+/* Container for the entire dashboard */
+
+.dashboard::-webkit-scrollbar {
+  width: 0; /* Hide the vertical scrollbar */
+}
+
+.dashboard::-webkit-scrollbar-thumb {
+  background: transparent; /* Hide the scrollbar thumb */
+}
+
+.dashboard::-webkit-scrollbar-track {
+  background: transparent; /* Hide the scrollbar track */
+}
+.backg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bicycle-doodle-set-2D9Y49D.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; /* Set the background behind the dashboard */
+  
+}
+
+.dashboard {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #333; /* Use a transparent dark background */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-family: 'Mali', sans-serif;
+  color: #fff;
+  position: relative;
+  z-index: 1; /* Set the dashboard above the background */
+  overflow-y: auto; /* Enable vertical scrolling for the dashboard */
+  height: 99.91%;
+}
+
+
+/* Header styles */
+.header1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Blackish background behind text */
+ 
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+
+.greeting {
+  font-family: 'Your Trendy Font', futura;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  margin: 8px 0;
+}
+
+.welcome-message {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+/* Section styles */
+.section {
+  margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.2); /* Dark background with transparency */
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.section:hover {
+  transform: scale(1.02);
+}
+
+.section-link {
+  font-size: 22px;
+  text-decoration: none;
+  color: hsl(150, 50%, 40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.section-link:hover {
+  color: hsl(150, 50%, 60%);
+  text-decoration: underline;
+}
+
+.section-description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+  color: #ddd;
+}
+
+/* Add transition effect on link hover */
+.section-link:hover {
+  opacity: 0.9;
+}
+
+/* Adding a subtle background for the links */
+.section-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.section-link:hover::before {
+  opacity: 1;
+}
+
+.logout-button {
+  cursor: pointer; /* Add this to indicate that the button is clickable */
+  font-size: 45px; /* Adjust the font size as needed */
+  margin-left: 10px; /* Add margin for spacing */
+  color: #333; /* Change the color if needed */
+}
+
+.logout-button:hover {
+  color: #555; /* Change the color on hover if needed */
+}

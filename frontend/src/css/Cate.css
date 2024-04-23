@@ -1,0 +1,118 @@
+/* Add this CSS to your existing Cate.css file or create a new one */
+
+/* Container for the entire Categories section */
+.bg {
+  /* background-color: #000;  */
+  background-image: url("../images/bicycle-doodle-set-2D9Y49D.png");
+  padding: 20px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; /* White text color */
+}
+
+/* Categories heading */
+.namex {
+  margin-bottom: 3.5%; /* Add margin to separate from the tiles */
+  color: #333;
+  margin-top: 3.5%;
+  font-family: 'Mali';
+  font-weight: bolder;
+  font-size: 1.5rem;
+  background: url("../images/images-bg.jpg") repeat-y center center/cover fixed;
+  
+  border-radius: 30px;
+  box-shadow: 0 10px 50px rgba(22, 73, 41, 0.4);
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  margin: auto;
+  padding: 45px;
+  
+}
+
+
+/* Logo image */
+.imgx {
+  position: absolute;
+  top:7%;
+  transition: transform .2s;
+  transform: rotate(45deg);
+  transition-duration: 0.8s;
+  right:6%;
+  margin:auto;
+  width: 6.5%;
+}
+.imgx:hover {
+  transform: scale(1.2);
+
+
+}
+
+/* Styling for each category card */
+/* Add this CSS to your existing Cate.css file or create a new one */
+
+/* Styling for all category cards */
+.category {
+  background-color: #333; /* Dark background for all categories */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  margin-top: 1.79%;
+  font-family: 'Mali';
+  transition: transform 0.2s; /* Add transition for the hover effect */
+}
+
+/* Hover effect for all category cards */
+.category:hover {
+  transform: scale(1.02); /* Scale up slightly on hover */
+}
+
+/* Link styling for all categories */
+.category .category-link {
+  font-size: 22px;
+  text-decoration: none;
+  color: hsl(150, 50%, 40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.category .category-link:hover {
+  color: #007bff;
+}
+
+/* Description styling for all categories */
+.category .category-description {
+  color: #ccc; /* Light gray text color */
+  margin-top: 10px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2; /* Place the header above the tiles */
+}
+
+/* .logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+} */
