@@ -31,9 +31,9 @@ function Dom() {
       food.length !== 0 &&
       plastic.length !== 0 &&
       textile.length !== 0 &&
-      glass.length != 0 &&
-      metal.length != 0 &&
-      paper.length != 0
+      glass.length !== 0 &&
+      metal.length !== 0 &&
+      paper.length !== 0
     ) {
       const url = "http://localhost/dmsadd.php";
 

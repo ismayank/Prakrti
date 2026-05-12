@@ -21,10 +21,10 @@ function Ind() {
       biodegradable.length !== 0 &&
       chemical.length !== 0 &&
       textile.length !== 0 &&
-      plastic.length != 0 &&
-      ewaste.length != 0 &&
-      glass.length != 0 &&
-      hazardous.length != 0
+      plastic.length !== 0 &&
+      ewaste.length !== 0 &&
+      glass.length !== 0 &&
+      hazardous.length !== 0
     ) {
       const url = "http://localhost/indadd.php";
 

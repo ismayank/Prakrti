@@ -24,7 +24,7 @@ function Comm() {
       biodegradable.length !== 0 &&
       chemical.length !== 0 &&
       electrical.length !== 0 &&
-      demolition.length != 0
+      demolition.length !== 0
     ) {
       const url = "http://localhost/commadd.php";
 
