@@ -63,7 +63,7 @@
     width: 95%;
   }
   .main {
-    background: url("/Applications/XAMPP/xamppfiles/htdocs/wastewise/wastewise/src/pages/image/images-bg.jpg") repeat-y center center/cover fixed;
+    background: url("../images/images-bg.jpg") repeat-y center center/cover fixed;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     overflow: auto;
@@ -102,7 +102,7 @@
   /*Image*/
   .card-avatar {
     --size: 60px;
-    background: url('/Applications/XAMPP/xamppfiles/htdocs/wastewise/wastewise/src/pages/image/3A910693-A382-4E05-9514-4FC2DFA0ECC5_1_105_c.jpg');
+    background: url('../images/3A910693-A382-4E05-9514-4FC2DFA0ECC5_1_105_c.jpg');
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
@@ -192,7 +192,7 @@
   /*Image*/
   .card2-avatar {
     --size: 60px;
-    background: url('/Applications/XAMPP/xamppfiles/htdocs/wastewise/wastewise/src/pages/image/3A910693-A382-4E05-9514-4FC2DFA0ECC5_1_105_c.jpg');
+    background: url('../images/3A910693-A382-4E05-9514-4FC2DFA0ECC5_1_105_c.jpg');
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
@@ -275,7 +275,7 @@
   /*Image*/
   .card3-avatar {
     --size: 60px;
-    background: url('/Applications/XAMPP/xamppfiles/htdocs/wastewise/wastewise/src/pages/image/3A910693-A382-4E05-9514-4FC2DFA0ECC5_1_105_c.jpg');
+    background: url('../images/3A910693-A382-4E05-9514-4FC2DFA0ECC5_1_105_c.jpg');
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
