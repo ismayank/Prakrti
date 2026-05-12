@@ -36,13 +36,15 @@ const Signup = ({ signup, isAuthenticated }) => {
     }; 
 
     const continueWithGoogle = async () => {
-        try {
-            const res = await axios.get(`${process.env.REACT_APP_API_URL}/auth/o/google-oauth2/?redirect_uri=${process.env.REACT_APP_API_URL}/google`)
-
-            window.location.replace(res.data.authorization_url);
-        } catch (err) {
-
-        }
+        // Google OAuth temporarily disabled
+        // try {
+        //     const res = await axios.get(`${process.env.REACT_APP_API_URL}/auth/o/google-oauth2/?redirect_uri=${process.env.REACT_APP_API_URL}/google`)
+        // 
+        //     window.location.replace(res.data.authorization_url);
+        // } catch (err) {
+        // 
+        // }
+        console.log('Google OAuth is currently disabled');
     };
 
     const togglePasswordVisibility = () => {
@@ -120,7 +122,8 @@ const Signup = ({ signup, isAuthenticated }) => {
                 </div>
                 <button className='btn btn-primary' type='submit'>Signup</button>
            
-                <button className="google-login-button" onClick={continueWithGoogle}>
+                {/* Google OAuth temporarily disabled */}
+          {/* <button className="google-login-button" onClick={continueWithGoogle}>
             <div className="icon">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
@@ -128,7 +131,7 @@ const Signup = ({ signup, isAuthenticated }) => {
               />
             </div>
             <div className="text">Sign In with Google</div>
-          </button>
+          </button> */}
             {/* <button className='btn btn-primary mt-3' onClick={continueWithFacebook}>
                 Continue With Facebook
             </button> */}

@@ -33,13 +33,15 @@ const Login = ({ login, isAuthenticated }) => {
     setShowPassword(!showPassword);
   };
   const continueWithGoogle = async () => {
-    try {
-      const res = await axios.get(
-        `${process.env.REACT_APP_API_URL}/auth/o/google-oauth2/?redirect_uri=${process.env.REACT_APP_API_URL}/google`
-      );
-
-      window.location.replace(res.data.authorization_url);
-    } catch (err) {}
+    // Google OAuth temporarily disabled
+    // try {
+    //   const res = await axios.get(
+    //     `${process.env.REACT_APP_API_URL}/auth/o/google-oauth2/?redirect_uri=${process.env.REACT_APP_API_URL}/google`
+    //   );
+    // 
+    //   window.location.replace(res.data.authorization_url);
+    // } catch (err) {}
+    console.log('Google OAuth is currently disabled');
   };
 
   if (isAuthenticated) {
