@@ -7,8 +7,7 @@ import elogo from "../images/images-small-globe.svg";
 
 const Signup = ({ signup, isAuthenticated }) => {
     const [accountCreated,setAccountCreated] = useState(false);
-    const [showPassword, setShowPassword] = useState(false);
-    const [formData, setFormData] = useState({
+        const [formData, setFormData] = useState({
         name:'',
         email: '',
         password: '',
