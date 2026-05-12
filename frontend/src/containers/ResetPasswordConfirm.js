@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom"; // Import useParams
+import { useNavigate, useParams } from "react-router-dom"; // Import useParams
 import { connect } from "react-redux";
 import { reset_password_confirm } from "../actions/auth";
-import axios from "axios";
 import "../css/Login.css";
 import elogo from "../images/images-small-globe.svg";
 
@@ -27,18 +26,6 @@ const ResetPasswordConfirm = ({ reset_password_confirm }) => {
       await reset_password_confirm(uid, token, new_password, re_new_password);
       setRequestSent(true);
       navigate("/Login"); // Use navigate to navigate to the desired page.
-    } catch (err) {
-      // Handle error
-    }
-  };
-
-  const continueWithGoogle = async () => {
-    try {
-      const res = await axios.get(
-        `${process.env.REACT_APP_API_URL}/auth/o/google-oauth2/?redirect_uri=${process.env.REACT_APP_API_URL}/google`
-      );
-
-      window.location.replace(res.data.authorization_url);
     } catch (err) {
       // Handle error
     }

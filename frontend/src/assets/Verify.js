@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {} from "react-router";
 import "../css/Verify.css";
 import elogo from "../images/images-small-globe.svg";

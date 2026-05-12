@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { connect } from "react-redux";
 import { login } from "../actions/auth";
-import axios from "axios";
 import "../css/Login.css";
 import elogo from "../images/images-small-globe.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,7 +22,6 @@ const Login = ({ login, isAuthenticated }) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const username = "Mayank";
 
     login(email, password);
     // navigate(`/Dash/${username}`);

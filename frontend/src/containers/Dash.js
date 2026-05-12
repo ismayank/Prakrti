@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import elogo from "../images/images-small-globe.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import {

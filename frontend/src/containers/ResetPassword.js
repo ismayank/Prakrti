@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { connect } from "react-redux";
 import { reset_password } from "../actions/auth";
-import axios from "axios";
 import "../css/Login.css";
 import elogo from "../images/images-small-globe.svg";
 
@@ -20,21 +19,10 @@ const ResetPassword = ({ reset_password }) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const username = "Mayank";
 
     reset_password(email);
     setRequestSent(true);
     // navigate(`/Dash/${username}`);
-  };
-
-  const continueWithGoogle = async () => {
-    try {
-      const res = await axios.get(
-        `${process.env.REACT_APP_API_URL}/auth/o/google-oauth2/?redirect_uri=${process.env.REACT_APP_API_URL}/google`
-      );
-
-      window.location.replace(res.data.authorization_url);
-    } catch (err) {}
   };
 
   if (requestSent) {

@@ -71,17 +71,6 @@ function Order() {
     setItems(newItems);
   };
   const handlePlaceOrder = () => {
-    const orderData = {
-      items: items.map((item) => ({
-        name: item.name,
-        quantity: item.quantity,
-        total: item.price * item.quantity,
-      })),
-      subtotal,
-      tax,
-      total,
-    };
-
     const url = 'http://localhost//order.php';
     const formData = new FormData();
     formData.append('subtotal', subtotal);

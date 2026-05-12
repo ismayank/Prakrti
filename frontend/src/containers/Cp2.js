@@ -1,8 +1,6 @@
-import React,{ useState } from 'react';
+import React from 'react';
 import '../css/Cp.css';
 import {}from "react-router";
-import {Link} from "react-router-dom";
-import axios from 'axios';
 import elogo from'../images/images-small-globe.svg';
 
 function Cp2() {

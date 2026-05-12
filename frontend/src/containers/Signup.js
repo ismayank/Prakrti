@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { signup } from '../actions/auth';
-import axios from 'axios';
 import "../css/Signup.css";
 import elogo from "../images/images-small-globe.svg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 const Signup = ({ signup, isAuthenticated }) => {
     const [accountCreated,setAccountCreated] = useState(false);
@@ -35,22 +32,7 @@ const Signup = ({ signup, isAuthenticated }) => {
         
     }; 
 
-    const continueWithGoogle = async () => {
-        // Google OAuth temporarily disabled
-        // try {
-        //     const res = await axios.get(`${process.env.REACT_APP_API_URL}/auth/o/google-oauth2/?redirect_uri=${process.env.REACT_APP_API_URL}/google`)
-        // 
-        //     window.location.replace(res.data.authorization_url);
-        // } catch (err) {
-        // 
-        // }
-        console.log('Google OAuth is currently disabled');
-    };
-
-    const togglePasswordVisibility = () => {
-        setShowPassword(!showPassword);
-    };
-    if (isAuthenticated) {
+        if (isAuthenticated) {
         return navigate('/Signup');
     }
     if (accountCreated) {
