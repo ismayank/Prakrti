@@ -79,7 +79,7 @@ const Signup = ({ signup, isAuthenticated }) => {
                 <label htmlFor="Name">Password </label>
                     <input
                         className='form-control'
-                        type={showPassword ? 'text' : 'password'}
+                        type='password'
                         // placeholder='Enter Password'
                         name='password'
                         value={password}
