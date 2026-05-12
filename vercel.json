@@ -2,18 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "backend/manage.py",
+      "src": "backend/auth_system/wsgi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "backend/auth_system/wsgi.py"
-    },
-    {
       "src": "/(.*)",
-      "dest": "frontend/$1"
+      "dest": "backend/auth_system/wsgi.py"
     }
   ],
   "env": {
