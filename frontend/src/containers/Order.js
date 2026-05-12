@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import GooglePayButton from '@google-pay/button-react';
 import "../css/Order.css";
 import { Link } from "react-router-dom";
 import elogo from '../images/images-small-globe.svg';
@@ -152,7 +151,8 @@ function Order() {
             <div>₹{total.toFixed(2)}</div>
           </div>
 
-          <GooglePayButton
+          {/* Google Pay temporarily disabled */}
+{/* <GooglePayButton
 environment="TEST"
 paymentRequest={{
   apiVersion: 2,
@@ -203,7 +203,7 @@ onPaymentDataChanged={paymentData => {
 existingPaymentMethodRequired='false'
 buttonColor='black'
 buttonType='Buy'
-/> 
+/> */} 
 
   
              <Link className="Link" to="/Userin">
