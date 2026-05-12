@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCreditCard, faMoneyCheckAlt, faMobile, faPiggyBank, faHandHoldingUsd } from '@fortawesome/free-solid-svg-icons';
 import '../css/Pay.css';
 import elogo from '../images/images-small-globe.svg';
-import GooglePayButton from '@google-pay/button-react';
 
 function Pay() {
   return (
@@ -42,8 +41,10 @@ function Pay() {
           Pay Later
         </a>
         <h1 className='or'>or</h1>
+        {/* Google Pay temporarily disabled */}
+        {/* 
         <GooglePayButton
-          className="custom-google-pay-button"  // Add a custom class
+          className="custom-google-pay-button"
           environment="TEST"
           paymentRequest={{
             apiVersion: 2,
@@ -63,38 +64,25 @@ function Pay() {
                   },
                 },
               },
+              {
+                type: 'PAYPAL',
+                parameters: {
+                  merchantId: 'PAYPAL_MERCHANT_ID',
+                },
+              },
             ],
-            merchantInfo: {
-              merchantId: '12345678901234567890',
-              merchantName: 'WASTEWISE',
-            },
-            transactionInfo: {
-              totalPriceStatus: 'FINAL',
-              totalPriceLabel: 'Total',
-              totalPrice: '1',
-              currencyCode: 'INR',
-              countryCode: 'IN',
-            },
-            shippingAddressRequired: true,
-            callbackIntents: ['SHIPPING_ADDRESS', 'PAYMENT_AUTHORIZATION'],
           }}
-          onLoadPaymentData={paymentRequest => {
-            console.log('Success', paymentRequest);
+          onPaymentAuthorized={(paymentResponse) => console.log('Payment authorized:', paymentResponse)}
+          onPaymentDataChanged={(paymentData) => console.log('Payment data changed:', paymentData)}
+          onError={(error) => console.error('Payment error:', error)}
+          onReadyToPayChange={(readyToPay) => console.log('Ready to pay changed:', readyToPay)}
+          onClick={(event) => {
+            console.log('Payment button clicked:', event);
+            // You can trigger payment here
           }}
-          onPaymentAuthorized={paymentData => {
-            console.log('Payment Authorised Success', paymentData)
-            return { transactionState: 'SUCCESS' }
-          }
-          }
-          onPaymentDataChanged={paymentData => {
-            console.log('On Payment Data Changed', paymentData)
-            return {}
-          }
-          }
-          existingPaymentMethodRequired='false'
-          buttonColor='black'
-          buttonType='Buy'
-        />
+          onLoad={() => console.log('Google Pay button loaded')}
+        /> 
+        */}
       </div>
     </div>
   );
